@@ -61,11 +61,13 @@ header {
   background-color: transparent;
   border: 1px solid var(--background-color);
   color: var(--background-color);
+  transition: all 200ms linear;
 }
 /* brands section */
 .brands {
   display: flex;
   justify-content: center;
+  margin-bottom: 200px;
 }
 .brands-img {
   width: 1110px;
@@ -74,4 +76,71 @@ header {
   border-bottom: 2px solid #eee;
   display: flex;
   justify-content: space-between;
+}
+/* popular section */
+.popular-headline {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.popular-flex {
+  display: flex;
+  justify-content: center;
+}
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.popular-card {
+  width: 329px;
+  height: 476px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-body h1 {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.card-body h2 {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.card-body .fa-star,
+.fa-star-half-alt {
+  font-size: 1rem;
+  color: orange;
+}
+.card-body span {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.card-body p {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: gray;
+}
+.popular-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+  top: 60px;
+  left: 1495px;
+}
+.popular-link .fa-arrow-right {
+  padding-left: 7px;
 }
