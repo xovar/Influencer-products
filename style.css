@@ -268,3 +268,42 @@ footer p {
   font-size: 2rem;
   color: var(--text-color);
 }
+/* responsive */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    margin: 49px;
+    text-align: center;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section-content h1 {
+    text-align: center;
+  }
+  .hero-section-content p {
+    text-align: center;
+  }
+  .hero-section-content a {
+    position: relative;
+    left: 163px;
+  }
+  .brands-img {
+    width: 706px;
+  }
+  .popular-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .popular-card {
+    padding: 20px;
+  }
+  .popular-link {
+    left: 50%;
+  }
+}
