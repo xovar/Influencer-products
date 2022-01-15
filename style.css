@@ -155,6 +155,7 @@ header {
   height: 480px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
+  border-radius: 20px;
 }
 .creative-left-side {
   width: 50%;
@@ -305,5 +306,85 @@ footer p {
   }
   .popular-link {
     left: 50%;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo {
+    margin: 49px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section-content {
+    width: auto;
+  }
+  .hero-section-content h1 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 42px;
+    width: auto;
+  }
+  .hero-section-content p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    width: 325px;
+    margin: 10px 0;
+  }
+  .hero-section-content a {
+    position: relative;
+    top: 29px;
+    left: 68px;
+  }
+  .hero-section-img img {
+    width: 202px;
+    height: 190px;
+  }
+  .brands {
+    display: none;
+  }
+  .popular-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+    grid-row-gap: 40px;
+  }
+  .popular-card {
+    padding: 10px;
+    width: 266px;
+  }
+  .popular-link {
+    left: 61%;
+  }
+  .creative-section {
+    width: 300px;
+    height: 500px;
+    flex-direction: column-reverse;
+  }
+  .creative-left-side {
+    width: 100%;
+  }
+  .creative-right-side {
+    width: 100%;
+  }
+  .creative-left-side input {
+    width: 237px;
+  }
+  .creative-left-side a {
+    margin: 7px 0;
+  }
+  .creative-left-side .sing-in-btn {
+    margin-bottom: 10px;
+  }
+  .creative-right-side a {
+    display: block;
+    margin: 20px 0;
   }
 }
