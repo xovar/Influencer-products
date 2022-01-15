@@ -1,0 +1,61 @@
+:root {
+  --background-color: #686de0;
+  --link-color: #686de0;
+  --text-color: #ffffff;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 80px 213px;
+}
+.hero-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-section-content h1 {
+  width: 582px;
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 70px;
+}
+.hero-section-content p {
+  width: 505px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.hero-section-content a {
+  text-decoration: none;
+  width: 196px;
+  height: 44px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px 24px;
+  border-radius: 41px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+}
+.hero-section-content a .fa-arrow-right {
+  transform: translateX(3px);
+  transition: transform 200ms linear;
+  line-height: 44px;
+}
+.hero-section-content a:hover .fa-arrow-right {
+  transform: translateX(7px);
+}
+.hero-section-content a:hover {
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
+}
